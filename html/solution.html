@@ -9,6 +9,8 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="../css/myStyles.css" rel="stylesheet" />
+
 </head>
   <body>
 
@@ -48,9 +50,38 @@
               <h4>Glen Stewart's Solution</h4>
             </div> <!-- end card-header -->
             <div class="card-body">
-              <p>
-                This is card body.  This is where you would put your solution to the coding challenge.
-              </p>              
+              <!-- ================ Solution starts here ================== -->
+              <section>
+                <form>
+                  <!-- ===== User Input Field ===== -->
+                  <div class="row">
+                    <div class="col-12">
+                      <p>Enter a series of positive whole numbers comma seperated.  Each number must be less than 400.  No more than 100 separate numbers.</p>
+                    </div>
+                  </div>
+                  <div class="form-group row mb-5">
+                    <label for="listOfNumbers" class="col-lg-2 col-form-label font-weight-bold">List of Numbers:</label>
+                    <div class="col-lg-10">
+                      <input type="text" class="form-control" id="numListInput" value="2,1,3,3">
+                    </div>
+                  </div>
+                  <!-- ===== Solution button ===== -->
+                  <div class="form-group row">
+                    <div class="col-lg-10 mb-3">
+                      <div class="d-flex">
+                        <button id="doLootCaveBtn" type="button" class="btn btn-primary mr-auto">Find Solution</button>
+                        <a href="./rules.html" class="btn btn-outline-info" role="button">See Rules</a>
+                        <a href="./instructions.html" class="btn btn-outline-info ml-2" role="button">See Instructions</a>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </section>
+              <hr class="Sep" />
+              <!-- ===== Output Area ===== -->
+              <section>
+                <div id="outArea" class="mb-3"></div>
+              </section>
             </div> <!-- end card body -->
           </div> <!-- end card div -->
         </section> <!-- end col -->
@@ -63,6 +94,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-    <script src="../js/sh-script.js"></script>
+    <script src="../js/scripts.js"></script>
   </body>
 </html>
