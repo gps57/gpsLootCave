@@ -67,12 +67,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\prism.css" />
+    <Content Include="html\about-me.html" />
+    <Content Include="html\instructions.html" />
+    <Content Include="html\rules.html" />
+    <Content Include="html\solution.html" />
+    <Content Include="html\tech-used.html" />
+    <Content Include="images\Challenge-Accepted-PNG-Free-Download.png" />
+    <Content Include="images\favicon-16x16.png" />
+    <Content Include="images\Glen-Camping.png" />
+    <Content Include="index.html" />
+    <Content Include="js\prism.js" />
+    <Content Include="js\scripts.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Docs\Coding-Challenge-TacoCat.pdf" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
