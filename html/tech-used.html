@@ -9,6 +9,8 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="../css/prism.css" rel="stylesheet" />
+
 </head>
   <body>
 
@@ -53,18 +55,31 @@
               <p>Here I will hightlight the technologies I used to implement my solution to this challenge.
                 Those technologies include: <strong>HTML</strong>, <strong>Javascript</strong>, 
                   <strong>Bootstrap</strong>, <strong>Chart.js</strong>, <strong>Github</strong> 
-                (for code management), and <strong> Netlify</strong> (for solution deployement).  I will
+                (for code management), and <strong> Netlify</strong> (for solution deployment).  I will
                 get into some details below.
               </p>
               <dl class="row">
                 <dt class="col-sm-3">HTML</dt>
-                <dd class="col-sm-9">There was nothing unusal in the HTML code.  I just had to make sure the navigation was
-                  right and the Javascript code was inserted where needed.
+                <dd class="col-sm-9">
+                  <p>
+                    There was nothing unusual in the HTML code.  I just had to make sure the navigation was
+                    right and the Javascript code was inserted where needed.
+                  </p>
+                  <button id="jsHtmlBtn" class="btn btn-info btn-sm" data-toggle="collapse" data-target="#htmlCodeArea">View HTML Code</button>
+                  <div id="htmlCodeArea" class="container collapse">
+                    <pre id="code-output" class="line-numbers language-javascript" data-src="../html/solution.html"></pre>
+                  </div>
                 </dd>
                 <dt class="col-sm-3">Javascript</dt>
                 <dd class="col-sm-9">
-                  <p>This coding challenge tests many JavaScript skills. In particular, arrays are a central
-                    data structure that must be mastered to accomplish a successful solution to this challenge.</p>
+                  <p>
+                    This coding challenge tests many JavaScript skills. In particular, arrays are a central
+                    data structure that must be mastered to accomplish a successful solution to this challenge.
+                  </p>
+                  <button id="jsCodeBtn" class="btn btn-info btn-sm" data-toggle="collapse" data-target="#jsCodeArea">View JavaScript Code</button>
+                  <div id="jsCodeArea" class="container collapse">
+                    <pre id="code-output" class="line-numbers language-javascript" data-src="../js/scripts.js"></pre>
+                  </div>
                 </dd>
                 <dt class="col-sm-3">Bootstrap</dt>
                 <dd class="col-sm-9">
@@ -108,5 +123,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../js/prism.js"></script>
+
   </body>
 </html>
