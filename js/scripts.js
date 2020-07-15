@@ -11,8 +11,23 @@ $("#doLootCaveBtn").on("click", function () {
     // convert this string of numbers into an array of numbers
     inputNumArray = workingString.split(',').map(Number);
 
-    let mostLoot = 0;
     let numberOfCaves = inputNumArray.length;
+
+    if (numberOfCaves > 100) {
+        outArea = document.getElementById("outArea").innerHTML = `
+            You entered ${numberOfCaves} caves. <span class="text-danger font-weight-bold">The maximum number of caves is 100.</span>
+            Please reduce the number of caves to less than 100.`
+        return;
+    }
+
+    if (Math.max(...inputNumArray) > 400) {
+        outArea = document.getElementById("outArea").innerHTML = `
+            <span class="text-danger font-weight-bold">The maximum value for any single number is 400.</span>
+            Please enter numbers that are not greater that 400.`
+        return;
+    }
+
+    let mostLoot = 0;    
 
     for (let i = 0; i < numberOfCaves; i++) {
         let newArray = shaveArray(inputNumArray, i);
