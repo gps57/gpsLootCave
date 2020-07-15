@@ -23,15 +23,12 @@ $("#doLootCaveBtn").on("click", function () {
 
     }
 
-    // starting from the first cave.
-    // mostLoot = findMaxLoot(inputNumArray);
-
-    // but what if I start from the second, or third, or some other cave?
-
-
     outArea = document.getElementById("outArea").innerHTML = `The maximum loot you can harvest from these caves is ${mostLoot}.`
 });
 
+// ===== function findMaxLoot =====
+// Given an array that represents a series of caves, and the amount of loot in each cave,
+// this function returns the maximum loot that can be taken.
 function findMaxLoot(array) {
     let loopLoot = 0;
     let maxLoot = 0;
@@ -61,6 +58,8 @@ function findMaxLoot(array) {
     return maxLoot;
 }
 
+// ===== function getIndexOfMax =====
+// Given an array this function returns the index of the largest number
 function getIndexOfMax(array) {
     let maxIndex = 0;
     let maxNum = 0;
@@ -75,7 +74,8 @@ function getIndexOfMax(array) {
 }
 
 // ===== function shaveArray =====
-// Given an array, this returns a new array with the first element removed.
+// Given an array, this returns a new array with a number of elements removed from the front
+// of the array.  The number of elements to remove is give as an argument to the function.
 // The original array is not altered.
 function shaveArray(array, howMany) {
     if (howMany == 0) {
